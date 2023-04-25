@@ -1,6 +1,6 @@
 {
     "name": "rspql-query-subsumption",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A library to check if an RSPQL query subsumes the other query",
     "main": "dist/index.js",
     "scripts": {

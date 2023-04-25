@@ -4,9 +4,9 @@
 
 ## Current Features.
 
-[x] - Checks the difference (without the blank nodes) between the basic graph patterns of two queries.
-[x] - If the difference array's length is more than 0, we conclude that query one subsumes the other.
-[] -  Improving the algorithm by additionally comparing the semantics of the difference array and if the variables present in the difference array are in the second query which is subsumed by it.
+- [x] - Checks the difference (without the blank nodes) between the basic graph patterns of two queries.
+- [x] - If the difference array's length is more than 0, we conclude that query one subsumes the other.
+- [] -  Improving the algorithm by additionally comparing the semantics of the difference array and if the variables present in the difference array are in the second query which is subsumed by it.
 
 # Usage
 
