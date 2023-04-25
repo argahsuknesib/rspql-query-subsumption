@@ -2,7 +2,7 @@ import { ParsedQuery } from "./parsers/ParsedQuery";
 import { parse } from "./parsers/RSPQLParser";
 import * as RDF from "@rdfjs/types";
 import { DataFactory, Quad } from "rdf-data-factory";
-import { getGraphBlankNodes, getQuadsWithBlankNodes, hashTerms, ITermHash, uniqGraph } from "rdf-isomorphic";
+import { getGraphBlankNodes, getQuadsWithBlankNodes, hashTerms, isomorphic, ITermHash, uniqGraph } from "rdf-isomorphic";
 import { everyTerms } from 'rdf-terms';
 import { quadToStringQuad } from "rdf-string";
 const sparqlParser = require('sparqljs').Parser;
@@ -38,7 +38,7 @@ function quadArrayToString<Q extends RDF.BaseQuad = RDF.Quad>(quadArray: Q[]): s
 }
 
 function compare_bgp_subsets(query_bgp_one: Quad[], query_bgp_two: Quad[]): boolean {
-    let difference_between_graphs = getNonBlankDiff(query_bgp_one, query_bgp_two);
+    let difference_between_graphs = getNonBlankDiff(query_bgp_one, query_bgp_two);      
     return (difference_between_graphs.length > 0) ? true : false;
 }
 
