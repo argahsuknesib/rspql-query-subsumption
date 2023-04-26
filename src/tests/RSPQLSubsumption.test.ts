@@ -56,6 +56,6 @@ describe('RSPQLSubsumption', () => {
         }
         `;
 
-        expect(is_subsumption(query_one, query_two)).toBe(true); // should be false
+        expect(is_subsumption(query_one, query_two)).toBe(false); // should be false
     })
 });

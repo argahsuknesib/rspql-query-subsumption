@@ -50,4 +50,5 @@ let query_two = `
 
 # License
 
-MIT License. Copyright (c) Kushagra Singh Bisen 2023. All rights reserved.
+This code is copyrighted by [Ghent University - imec](https://www.ugent.be/ea/idlab/en) and released under the [MIT Licence](./LICENCE)
+
